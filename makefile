@@ -1,2 +1,2 @@
 default:
-	clang++ main.cpp -o out
+	clang++ main.cpp -o main.exe

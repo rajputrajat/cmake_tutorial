@@ -1,3 +1,5 @@
+#include <iostream>
+
 int main() {
-    return 0;
+    std::cout << "hello cmake!" << std::endl;
 }
