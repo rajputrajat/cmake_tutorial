@@ -1,6 +1,6 @@
 #include <iostream>
+#include "adder/adder.h"
 
-float add(float, float);
 
 int main() {
     std::cout << "hello cmake!" << "\n";

@@ -2,5 +2,8 @@ cmake_minimum_required(VERSION 3.20.4)
 
 project(CMK)
 
-add_executable(${PROJECT_NAME} main.cpp adder.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
+add_subdirectory(adder)
+
+target_link_libraries(${PROJECT_NAME} adder)
