@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.20.4)
 
-project(CMK)
+project(CMK VERSION 0.1)
+
+configure_file(cmk_config.h.in cmk_config.h)
 
 add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
 add_subdirectory(adder)
 
